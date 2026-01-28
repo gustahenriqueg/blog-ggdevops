@@ -40,8 +40,7 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          api_location: "public"
-          output_location: "public" 
+          app_location: "public"
           skip_app_build: true 
 
   close_pull_request_job:
@@ -55,4 +54,5 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_SWA_TOKEN }}
           action: "close"
+
 
